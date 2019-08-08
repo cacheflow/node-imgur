@@ -134,4 +134,10 @@ export class Client {
       body: form,
     });
   }
+
+  delete(endpoint: string): Promise<any> {
+    return this.request(endpoint, {
+      method: 'DElETE'
+    })
+  }
 }
